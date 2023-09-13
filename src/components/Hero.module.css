@@ -1,0 +1,96 @@
+.heroContainer {
+  margin: 0 0 0 10%;
+
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  z-index: 10;
+}
+
+.heroContent h1 {
+  width: 730px;
+}
+.heroContent p {
+  width: 540px;
+  margin: 39px 0 48px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.btnOrange {
+  width: 140px;
+  height: 72px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+.btnOrange:hover {
+  background-color: #ff9393;
+}
+.heroImageContent {
+  position: relative;
+  right: 300px;
+
+  z-index: -10;
+}
+
+@media screen and (max-width: 1024px) {
+  .heroContainer {
+    margin: 0 0 0 5%;
+  }
+  .heroContent {
+    align-items: start;
+  }
+  .heroContent h1 {
+    width: 398px;
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .heroContent p {
+    width: 398px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroImageContent {
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .heroContainer {
+    margin: 0 0 60px 0;
+    flex-direction: column-reverse;
+  }
+  .heroContent {
+    margin: 0 5% 0 5%;
+    /* top: 275px; */
+  }
+  .heroContent h1 {
+    width: auto;
+    /* font-size: 40px; */
+    /* line-height: 40px; */
+  }
+  .heroContent p {
+    width: 327px;
+  }
+  .heroImageContent {
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .heroContainer h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,118 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 10%;
+  height: 178px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  background-color: var(--color-red);
+  padding: 56px 165px 56px 100px;
+}
+
+.navbar a {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 400;
+  color: var(--color-white);
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: 700;
+}
+li {
+  list-style: none;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.btnBlack {
+  width: 199px;
+  height: 64px;
+  margin-left: 17px;
+  font-family: "Commissioner", sans-serif;
+  font-weight: 800;
+  color: var(--color-text-black);
+  font-size: 16px;
+  line-height: 32px;
+  background-color: var(--color-bg-black);
+  color: var(--color-white);
+}
+.btnBlack:hover {
+  background-color: #434356;
+}
+/* Mobile Menu  */
+.hamburgerIcon {
+  position: absolute;
+  top: 33px;
+  right: 5px;
+  display: none;
+}
+.mobileNav {
+  position: absolute;
+  top: 0px;
+  width: 256px;
+  left: -300px;
+  z-index: 20;
+  transition: 1s ease-out;
+}
+.mobileNavOpen {
+  position: absolute;
+  top: 110px;
+  width: 256px;
+  left: 50px;
+  z-index: 20;
+  transition: 1s ease-in;
+}
+.mobileNavContent ul {
+  background-color: var(--color-bg-black);
+  color: #fff;
+  position: relative;
+  z-index: 20;
+  padding: 32px 30px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobileNavContent li {
+  margin-bottom: 30px;
+  list-style: none;
+}
+.btnOrange {
+  width: 199px;
+  height: 72px;
+  background-color: var(--color-red);
+  color: #fff;
+  font-weight: 700;
+}
+.btnOrange:hover {
+  background-color: #ff9393;
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    margin-left: 5%;
+  }
+  .navbar ul {
+    padding: 56px 40px 56px 33px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar {
+    height: 91px;
+  }
+  .hamburgerIcon {
+    display: block;
+  }
+  .navRight ul {
+    display: none;
+  }
+}

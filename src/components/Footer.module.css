@@ -1,0 +1,61 @@
+.footerContainer {
+  padding: 120px 10% 115px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.footerContainer::before {
+  content: url(../assets/desktop/bg-pattern-wave-red.svg);
+  position: absolute;
+  left: -65px;
+}
+.footerContainer h2 {
+  width: 635px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.btnOrange {
+  width: 199px;
+  height: 64px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+.btnOrange:hover {
+  background-color: #ff9393;
+}
+@media screen and (max-width: 1024px) {
+  .footerContainer::before {
+    display: none;
+  }
+  .footerContainer h2 {
+    font-size: 32px;
+    line-height: 32px;
+    width: 398px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    padding: 70px 40px 101px 39px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footerContainer {
+    flex-direction: column;
+    row-gap: 47px;
+    align-items: start;
+  }
+  .footerContainer h2 {
+    width: 327px;
+  }
+}
+@media screen and (max-width: 327px) {
+  .footerContainer h2 {
+    width: 315px;
+  }
+}
